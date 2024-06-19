@@ -61,7 +61,8 @@
         </div>
         <div class="p-field">
             <label for="date">Data</label>
-            <input type="date" pInputDate id="date" [(ngModel)]="solicitation.date" formatDate="dd/mm/yyyy" required autofocus [ngClass]="{'ng-invalid ng-dirty' : submitted && !solicitation.date}"/>
+            <p-calendar [(ngModel)]="solicitation.date" />
+            <!-- <input type="date" pInputDate id="date" [(ngModel)]="solicitation.date" formatDate="dd/mm/yyyy" required autofocus [ngClass]="{'ng-invalid ng-dirty' : submitted && !solicitation.date}"/> -->
         </div>
     </div>
     <div class="p-dialog-footer">
